@@ -1,0 +1,21 @@
+[package]
+name = "figment_string"
+version = "0.1.0"
+authors = ["Kevin R <sweetpea-git@tentacle.net>"]
+description = "Forces figment config types to be parsed as strings"
+homepage = "https://github.com/squidpickles/figment_string"
+repository = "https://github.com/squidpickles/figment_string.git"
+documentation = "https://docs.rs/figment_string"
+readme = "README.md"
+keywords = ["config", "figment"]
+categories = ["config"]
+license = "Apache-2.0"
+edition = "2018"
+
+[dependencies]
+serde = "1"
+
+[dev-dependencies]
+serde = { version = "1", features = ["derive"] }
+figment = { version = "0.10", features = ["env"] }
+temp-env = "0.3"
